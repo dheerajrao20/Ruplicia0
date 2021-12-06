@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #f5f7fb;
+  height: 100vh;
+}
+
+/* /////////////////////////////  Navbar starts from here  //////////////  */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+  background-color: #fff;
+  box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.05);
+}
+.logo h1 {
+  font-size: 24px;
+  cursor: pointer;
+}
+.rec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rec img,
+.rec h2 {
+  padding: 8px;
+  font-size: 18px;
+}
+.rec img {
+  cursor: pointer;
+}
+
+/* ////////////////////// main content starts from here //////////////  */
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+.con-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 79vh;
+}
+.img-box {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.img-box img {
+  padding: 10px;
+}
+.title h1 {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.name h2 {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0 0 20px;
+}
+.p-name,
+.a-name {
+  height: 8vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.a-name {
+  height: 16vh;
+}
+
+/* ///////////////////// ceneter box of content from here //////////////  */
+
+.con-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 75vh;
+  background: #fff;
+  margin-top: 2vh;
+  border-radius: 10px;
+}
+.pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55vw;
+  cursor: pointer;
+}
+.pic img {
+  width: 56%;
+}
+.con-2-name h2 {
+  font-size: 18px;
+  padding-left: 16px;
+}
+
+/* ////////////////////// right box of content ////////////////////  */
+
+.con-3 {
+  display: flex;
+  flex-direction: column;
+  height: 81vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.box {
+  background-color: #fff;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5vh;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box-con {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 12vw;
+  height: 12vh;
+  padding: 1vw;
+  border-radius: 10px;
+}
+.active-mic {
+  background-color: #aaffd6;
+}
+.mic {
+  position: absolute;
+  bottom: 1px;
+  left: 10px;
+}
+.mic img {
+  width: 80%;
+}
+.circle {
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 50%;
+}
+.circle h1 {
+  border-radius: 50%;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1),
+    2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* ///////////////////////////  Footer starts from here /////////////////  */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  background-color: #fff;
+  padding: 2.5vh 0;
+}
+.icons {
+  display: flex;
+  width: 18vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-box {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+}
+.icon-box:hover {
+  background-color: #aaffd6;
+}
+.icons img {
+  padding: 14px;
+}
+.foot-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.foot-name h1 {
+  font-size: 24px;
+}
+.foot-name h2 {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.leave button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: #ff2c2c;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.leave button:hover {
+  border: 2px solid red;
+  background-color: transparent;
+  color: red;
+  font-size: 24px;
+  padding: 0 27px;
+}
+.leave button:hover img {
+  display: none;
+}
+
+/* /////////////////////////////// scroll bar animation //////////////////////////  */
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* //////////////// Tring to make it responsive ////////////  */
+
+@media (max-width:900px){
+  .con-3{
+    display: none;
+  }
+  .content{
+    flex-direction: column-reverse;
+  }
+  .con-1{
+    display: flex;
+    flex-direction: row;
+  }
+  .con-2{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .con-2 h2{
+    position: absolute;
+  }
+}
